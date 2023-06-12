@@ -15,4 +15,17 @@ public class StudentsService {
     public List<Students> studentdetails(){
         return repo.findAll();
     }
+
+    public void addstudents(Students Student1){
+        repo.save(Student1);
+    }
+    public void deleteStudents(int ID){
+        repo.deleteById(ID);
+    }
+    public void deleteall(){
+        repo.deleteAll();
+    }
+    public List<Students> studentbyname(String Name){
+       return repo.findByName(Name);
+    }
 }

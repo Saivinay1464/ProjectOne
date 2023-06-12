@@ -6,27 +6,27 @@ import javax.persistence.Id;
 @Entity
 public class Students {
     @Id
-    int Id;
-    String Name;
+    int id;
+    String name;
     String status;
     int duration;
 
-    String Address;
+    String address;
 
     public int getId() {
-        return Id;
+        return id;
     }
 
     public void setId(int id) {
-        Id = id;
+        id = id;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        name = name;
     }
 
     public String getStatus() {
@@ -46,11 +46,11 @@ public class Students {
     }
 
     public String getAddress() {
-        return Address;
+        return address;
     }
 
     public void setAddress(String address) {
-        Address = address;
+        address = address;
     }
 
 
